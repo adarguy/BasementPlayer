@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Camps - Byte Camp - Creative Tech Programs for Kids: 3D Animation, Claymation, 2D Game Design, 3D Game Design, Music and Video Production, 3D Printing and Design, 2D Tablet Animation, Build an App</title>
+
+    <script src="../static/js/init.js"></script>
+    <script>printHead("../");</script>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top"  onload="init()" style="background-image:url('../static/img/banners/controller-tile-purple.png');">
+    <script>AOS.init();</script>
+    
+    <script>printNav("../");</script>
+
+    <div id='title-grab'>
+        <canvas id="canvas" style="position:absolute;top:0;" width="100" height="1"></canvas>
+        <div id="header" class="container-fluid title-header" style="background:#9955FF;"></div>
+        <div id="box2d-container">
+            <div class="in-box2d"><h1 class="text-center banner-text">CAMPS</h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/clay.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/2dg.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/mv.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/i2c.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/2d.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/3d.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/baa.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/cyoa.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/3dg.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/lca.png" class="camp-icon"></h1></div>
+            <div class="in-box2d"><h1 class="text-center banner-text no-select"><img src="../static/img/icons/bc/ani3.png" class="camp-icon"></h1></div>
+        </div>
+        <script type="text/javascript">checkMobile();</script>
+    </div>
+
+    <!-- Program select -->
+    <a id="programs" class="anchor"></a>
+    <div id="programs-section" class="content-section">
+        <div class="text-center" style="margin:20px;">
+            <div class="btn-group btn-group-lg filters-button-group col-xs-12 col-sm-12 col-center" role="group" id="btn-group-age" aria-label="...">
+                <button type="button" class="camp-filters camp-filter-orange" id="allyrbutton" data-filter="*"><h6>ALL</h6></button>
+                <button type="button" class="camp-filters camp-filter-green" id="9yrbutton" data-filter=".younger"><h6>9-12 years</h6></button>
+                <button type="button" class="camp-filters camp-filter-purple" id="11yrbutton" data-filter=".older"><h6>11-14 years</h6></button>
+            </div>
+            <br>
+            <div class="btn-group btn-group-lg filters-button-group col-xs-12 col-sm-12 col-center" role="group" id="btn-group-age" aria-label="...">
+                <button type="button" class="camp-filters camp-filter-purple" id="animatebutton" data-filter=".animation"><h6>Animation</h6></button>
+                <button type="button" class="camp-filters camp-filter-orange" id="codingbutton" data-filter=".coding"><h6>Coding</h6></button>
+                <button type="button" class="camp-filters camp-filter-green" id="otherbutton" data-filter=".other"><h6>Other</h6></button>
+            </div>
+        </div>
+
+        <div class="container" style="padding-bottom:100px;">
+            <!-- ROW 1 -->
+            <div class="row_camps">
+                <!-- CLAYMATION -->
+                <div class="element-item col-lg-6 col-xs-12 younger animation" data-category="younger animation">
+                    <div class="camp-content" style="background:#9955FF;">
+                        <div class="camp-info text-center" id="camp-info-clay">
+                            <img src="../static/img/icons/bc/clay.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Claymation</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Learn stop motion animation and movie editing!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#clayModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2D TABLET ANIMATION -->
+                <div class="element-item col-lg-6 col-xs-12 younger animation" data-category="younger animation">
+                    <div class="camp-content" style="background:#FF9955;">
+                        <div class="camp-info text-center" id="camp-info-2d" >
+                            <img src="../static/img/icons/bc/2d.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">2D Tablet Animation</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Hand draw animated movies on tablets just like Disney!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#2dModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ANIMATION^3 -->
+                <div class="element-item col-lg-6 col-xs-12 younger animation" data-category="younger animation">
+                    <div class="camp-content" style="background:#C5F43D;">
+                        <div class="camp-info text-center" id="camp-info-ani3" >
+                            <img src="../static/img/icons/bc/ani3.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Animation&sup3</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $150, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Learn 3 kinds of animation in 1 camp!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#ani3Modal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MUSIC VIDEO -->
+                <div class="element-item col-lg-6 col-xs-12 younger other" data-category="younger other">
+                    <div class="camp-content" style="background:#9955FF;">
+                        <div class="camp-info text-center" id="camp-info-mv">
+                            <img src="../static/img/icons/bc/mv.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Music Video Production</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Write some sick beats then create the music video!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#mvModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LIGHTS!, COMPUTER!, ACTION! -->
+                <div class="element-item col-lg-6 col-xs-12 younger other" data-category="younger other">
+                    <div class="camp-content" style="background:#FF9955;">
+                        <div class="camp-info text-center" id="camp-info-lca">
+                            <img src="../static/img/icons/bc/lca.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Lights! Computer! Action!</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Make a movie and then add effects for real movie magic!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#lcaModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INTRO TO CODE -->
+                <div class="element-item col-lg-6 col-xs-12 younger coding" data-category="younger coding">
+                    <div class="camp-content" style="background:#C5F43D;">
+                        <div class="camp-info text-center" id="camp-info-i2c">
+                            <img src="../static/img/icons/bc/i2c.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Introduction to Coding</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Learn real coding skills by making games from Scratch!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#i2cModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CODE YOUR OWN ADVENTURE -->
+                <div class="element-item col-lg-6 col-xs-12 younger coding" data-category="younger coding">
+                    <div class="camp-content" style="background:#9955FF;">
+                        <div class="camp-info text-center" id="camp-info-cyoa">
+                            <img src="../static/img/icons/bc/cyoa.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Code Your Own Adventure</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>9-12 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Build an adventure game on your web browser!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#cyoaModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2D GAMES -->
+                <div class="element-item col-lg-6 col-xs-12 older coding" data-category="older coding">
+                    <div class="camp-content" style="background:#FF9955;">
+                        <div class="camp-info text-center" id="camp-info-2dg">
+                            <img src="../static/img/icons/bc/2dg.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">2D Video Game Design</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>11-14 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Design and code your own compter game!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#2dgModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D ANIMATION -->
+                <div class="element-item col-lg-6 col-xs-12 older animation" data-category="older">
+                    <div class="camp-content" style="background:#C5F43D;">
+                        <div class="camp-info text-center" id="camp-info-3d">
+                            <img src="../static/img/icons/bc/3d.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">3D Animation</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>11-14 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Draw 3D characters, animate them and create a story!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#3dModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D GAMES -->
+                <div class="element-item col-lg-6 col-xs-12 older coding" data-category="older coding">
+                    <div class="camp-content" style="background:#9955FF;"> 
+                        <div class="camp-info text-center" id="camp-info-3dg">
+                            <img src="../static/img/icons/bc/3dg.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">3D Video Game Design</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>11-14 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Design a 3D video game like the pros!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#3dgModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BUILD AN APP -->
+                <div class="element-item col-lg-6 col-xs-12 older" data-category="older">
+                    <div class="camp-content" style="background:#FF9955;">
+                        <div class="camp-info text-center" id="camp-info-baa">
+                            <img src="../static/img/icons/bc/baa.png" class="camp-icon"><br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header">Build An App</h1>
+                            <hr style='margin:5px'>
+                            <h4 style='margin-bottom: 0px'>11-14 yrs, $200-$275, 4-5 full days</h4>
+                            <hr style='margin:5px'>
+                            <p style='margin-bottom: 10px;'>Develop an Android app from your fingertips!</p>
+                            <a class="btn btn-primary btn-lg camp-btns" data-toggle="modal" data-target="#baaModal"><i class="fa fa-info-circle" style='margin-right:10px;' aria-hidden="true"></i>Details</a>
+                            <a class="btn btn-primary btn-lg camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODALS -->
+
+
+        <!-- Clay Modal -->
+        <div class="modal fade" id="clayModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/clay.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Claymation</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/clay.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-clay" class="camp-vid" preload="metadata" poster="../static/vid/camps/clay-lost_zebra.png" playsinline>
+                                    <source src="../static/vid/camps/clay-lost_zebra.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+
+                            <div class="col-xs-12 col-md-6" style="margin-top:2%;">
+                                <p style='font-size: 20px;'>Make your own clay characters come to life, just like Shaun the Sheep! Participants will
+                                work with a partner to build their own clay characters, sets and props, develop their own
+                                script, shoot their movie scene, and then learn to edit and add sounds and special effects
+                                to complete the whole project. Don't worry parents, there will be plenty of time devoted to
+                                outdoor games and activities!</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2d Modal -->
+        <div class="modal fade" id="2dModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/2d.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">2D Tablet Animation</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/2d.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-2d" class="camp-vid" preload="metadata" poster="../static/vid/camps/2d-app_awareness.png" playsinline>
+                                    <source src="../static/vid/camps/2d-app_awareness.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Turn your drawing skills into awesome animation skills on our tablets! We'll show you how 
+                                to make beautiful animations as wild as your imagination. Participants will learn to storyboard and use some advanced 
+                                animation skills to make their characters really come alive on the screen. Principles like Squash & Stretch, 
+                                Anticipation and Exaggeration will be introduced in fun lessons and students will produce their own animated short 
+                                films by the end of the week.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ANI3 Modal -->
+        <div class="modal fade" id="ani3Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/ani3.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Animation&sup3</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/ani3.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-ani3" class="camp-vid" preload="metadata" poster="../static/vid/camps/ani3-comp.png" playsinline>
+                                    <source src="../static/vid/camps/ani3-comp.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Explore the world of Animation, from Stop-Motion and Claymation to Vector and 3D Animation. Students will learn hands-on how these creative processes are used to make some of the TV shows and movies they love. The program will take students through various animation techniques like claymation, stop-motion animation on tablets, and 3D animation design!</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MV Modal -->
+        <div class="modal fade" id="mvModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/mv.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Music and Video Production</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/mv.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-mv" class="camp-vid" preload="metadata" poster="../static/vid/camps/mv-power_of_music.png" playsinline>
+                                    <source src="../static/vid/camps/mv-power_of_music.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Make your own music and music video! Camp time will be split between digital music composition, video filming and editing. Use amazing software tools to craft your very own song from scratch. We will show you the basics on beats, baselines, chords and melodies so that your song will sound awesome. Experiment with video, special effects and editing techniques to make the video as cool as your tune.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lights! Camera! Action! Modal -->
+        <div class="modal fade" id="lcaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/lca.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Lights! Camera! Action!</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/lca.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-lca" class="camp-vid" preload="metadata" poster="../static/vid/camps/mv-power_of_music.png" playsinline>
+                                    <source src="../static/vid/camps/mv-power_of_music.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>What makes movie filming so much more special than how we film with a regular camera? Learn how to transform your ordinary camera into an industry movie making one by learning basic filming techniques and nifty special effects such as camera distances/angles, storyboarding and planning, green screen manipulation, and more! Students each will plan and shoot their own short films or videos about a minute in length.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- I2C Modal -->
+        <div class="modal fade" id="i2cModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/i2c.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Introduction To Coding</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/i2c.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-i2c" class="camp-vid" preload="metadata" poster="../static/vid/camps/i2c-scarf.png" playsinline>
+                                    <source src="../static/vid/camps/i2c-scarf.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Discover how much fun it is to build your own game! Students will be introduced to basic coding 
+                                skills with easy to use drag-and-drop software, and get to use those skills to make their very own games. Students will also 
+                                learn how to create their own 2D vector artwork to make characters and levels that are entirely their own. The final project 
+                                is a game that you can take home on USB or proudly share with friends online.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CYOA Modal -->
+        <div class="modal fade" id="cyoaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/cyoa.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Code Your Own Adventure</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/cyoa.png" class="camp-icon">
+                            <p style='margin:0'>9-12 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-cyoa" class="camp-vid" preload="metadata" poster="../static/vid/camps/NOT-DONE.png" playsinline>
+                                    <source src="../static/vid/camps/NOT-DONE.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Kids will have a chance to learn HTML and CSS - the languages that power the web - to build their own choose-your-own-adventure game! Create a story! Create your own vector-based artwork! Program it for the web!</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2D Games Modal -->
+        <div class="modal fade" id="2dgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/2dg.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">2D Video Game Design</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/2dg.png" class="camp-icon">
+                            <p style='margin:0'>11-14 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-2dg" class="camp-vid" preload="metadata" poster="../static/vid/camps/2dg-wolf.png" playsinline>
+                                    <source src="../static/vid/camps/2dg-wolf.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Learn how to build an HTML5 game from the ground up using awesome free tools. This is a coding camp, 
+                                so be prepared to challenge yourself and learn some new skills. Time will be spent learning how to create advanced 2D vector artwork 
+                                and animated character sprites to make your game look great. The final project is a game you can take home on USB or proudly share 
+                                with friends online. Some coding experience or Byte Camp's - Intro to Coding is a recommended as a prerequisite.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D Animation Modal -->
+        <div class="modal fade" id="3dModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/3d.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">3D Animation</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/3d.png" class="camp-icon">
+                            <p style='margin:0'>11-14 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-3d" class="camp-vid" preload="metadata" poster="../static/vid/camps/3d-harry_potter.png" playsinline>
+                                    <source src="../static/vid/camps/3d-harry_potter.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Dreaming of a career with PIXAR? Ever wonder how those awesome 3D animated movies like Shrek, Toy 
+                                Story and Frozen are made? Spend the week learning how by modeling, animating and telling your own stories in 3D. You'll use 
+                                Blender, a wonderful (& free!) 3D software, to design characters that jump off the screen and then make them come alive by 
+                                adding voices, soundtracks and completing your own animated short film. Final projects are usually group projects with each 
+                                student contributing a character and a scene.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3D Games Modal -->
+        <div class="modal fade" id="3dgModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/3dg.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">3D Game Design</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/3dg.png" class="camp-icon">
+                            <p style='margin:0'>11-14 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-3dg" class="camp-vid" preload="metadata" poster="../static/vid/camps/3dg-scavenger.png" playsinline>
+                                    <source src="../static/vid/camps/3dg-scavenger.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Create your own 3D Video Game! Invent your own digital worlds levels, adventures and quests using 
+                                Blender, a great (& free) 3D Game Engine. Students will learn to make their own custom controls and gameplay using Blender's 
+                                unique Logic Bricks design interface. Instructors will lead students through exercises to introduce the most important 3D game 
+                                design skills in the early part of the week and then support students on their own projects for the second half. The final project 
+                                is a game you can take home on USB. Byte Camp's 3D Animation course is a prerequisite.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Build An App Modal -->
+        <div class="modal fade" id="baaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <div class="text-center">
+                            <img src="../static/img/icons/bc/baa.png" class="camp-icon">
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <h1 class="text-center camp-header camp-modal-header">Build An App</h1>
+                                <br class="hidden-md hidden-lg hidden-xl">
+                            <img src="../static/img/icons/bc/baa.png" class="camp-icon">
+                            <p style='margin:0'>11-14 yrs, $200-$275, 4-5 full days</p>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12 col-md-6">
+                                <video id="camp-vid-baa" class="camp-vid" preload="metadata" poster="../static/vid/camps/NOT-DONE.png" playsinline>
+                                    <source src="../static/vid/camps/NOT-DONE.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.   
+                                </video>
+                                <img class="byte-tv" src="../static/img/icons/bc/byte-tv.png">
+                            </div>
+                            <div class="col-xs-12 col-md-6">
+                                <p style='font-size: 20px;'>Learn how to design, code, test and deploy you very own app! Use the GPS, accelerometer or anything 
+                                else you can think of to build your app from scratch. This is a coding camp, so be prepared to challenge yourself and learn some 
+                                new skills. Each day a new project is introduced and students are taken through the steps of understanding and working with the 
+                                new code ideas. Students will get to work on their own project ideas on the final two days. They may use their own mobile devices 
+                                to develop and test on, or use ours. No previous experience is required however Byte Camp's 2D Video Game Design is recommended.</p>
+                                <a class="btn btn-primary btn-lg camp-modal-btns camp-btns" href="calendar/calendar_2017.html"><i class="fa fa-user-plus" style='margin-right:10px;' aria-hidden="true"></i> Register!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--img src='../static/img/icons/bc/clay.png' class='lilclayguy hidden-xs' style='position: fixed; bottom: 10px; right: 10px;'/-->
+    </div>
+
+    <script>printFoot("../");</script>
+    <script src="../static/js/camps.js"></script>
+</body>
+
+</html>
