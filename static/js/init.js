@@ -103,7 +103,7 @@ function printFoot(root_dir){
 	    </footer>
 
 	    <!-- jQuery -->
-	    <script src="`+root_dir+`static/js/vendor/jquery.min.js"></script>
+	    <script src="`+root_dir+`static/js/vendor/jquery-3.3.1.min.js"></script>
 	    
 	    <!-- Bootstrap Core JS -->
 	    <script src="`+root_dir+`static/js/vendor/bootstrap.min.js"></script>
