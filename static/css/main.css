@@ -30,7 +30,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Josefin Sans', cursive;
+  font-family: 'Raleway';
   color: black;
   background-color: #F9F9F9;
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
@@ -46,20 +46,21 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin: 0 0 25px;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 @media (min-width: 768px) {
   p {
     margin: 0 0 35px;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.6;
   }
 }
 
 a {
-  color: black;
+  -webkit-text-stroke: 1.0px black;
+  -webkit-text-fill-color: #4B6C92;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -68,8 +69,8 @@ a {
 
 a:hover,
 a:focus {
-  text-decoration: none;
-  color: red;
+  -webkit-text-stroke: 1.0px #4B6C92;
+  -webkit-text-fill-color: black;
 }
 
 hr{ border: 1px solid black; }
@@ -127,6 +128,10 @@ a.anchor {
 }
 
 .banner-text{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
   text-shadow: 0px 5px black;
   font-size: 14vw;
@@ -362,8 +367,8 @@ a.anchor {
   height: 40px;
   margin-top: 5px;
   float: left;
-  -webkit-transition: font-size 0.5s, -webkit-transform 1s; /* Safari */
-  transition: font-size 0.5s, transform 1s;
+  /*-webkit-transition: font-size 0.5s, -webkit-transform 1s;
+  transition: font-size 0.5s, transform 1s;*/
 }
 
 .navbar-home a {
@@ -375,9 +380,9 @@ a.anchor {
 .navbar-home a:hover {
   z-index:99;
   font-size:25px;
-  -webkit-transform: rotateZ(-360deg);
+  /*-webkit-transform: rotateZ(-360deg);
   -ms-transform: rotateZ(-360deg);
-  transform: rotateZ(-360deg);
+  transform: rotateZ(-360deg);*/
   text-shadow: 1px 1px 2px #AAAAAA, 0 0 25px #AAAAAA, 0 0 5px #AAAAAA;
 }
 
@@ -387,7 +392,7 @@ a.anchor {
   /*box-shadow: 0px 2px 5px black;*/
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #FFFFFF;
+  background: white;
   z-index:999;
 }
 
@@ -608,6 +613,7 @@ video#bgvid, #videocover{
 .index-title {
   display:inline-block;
   color:#FFFFFF;
+  font-family:"Helvetica";
 }
 
 #map {
@@ -682,36 +688,36 @@ ul.banner-social-buttons {
   color: black;
 }
 
+.index-btn-img{
+  position: relative;
+  height:200px;
+  width: 100%;
+  object-fit:cover;
+  background-color:black;
+  background-size:400px;
+  background-repeat:no-repeat;
+  background-position:center;
+  border:2px solid black;
+  margin-bottom: 10px;
+}
+
 .index-btn-text{
   position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 70px;
-  margin-top:15%;
+  top: 50%;
+  left: 50%;
+  height:100px;
+  width:250px;
+  transform: translate(-50%, -50%);
+  background-color:rgba(240,240,240,0.7);
+  padding:30px;
   text-align: center;
-  font-size: 7vw;
+  font-size: 40px;
   font-weight: normal;
   transition: all 0.2s ease-in-out;
 }
+
 .index-btn-text:hover {
-  color:gold;
-}
-
-.index-btn-img{
-  position: relative;
-  display:block;
-  height:200px;
-  width: 100%;
-  border:2px solid black;
-  margin-bottom: 10px;
-  opacity:0.4;
-}
-
-@media (min-width: 768px) {
-  .index-btn-text{
-    font-size: 56px;
-  }
+  font-color:yellow !important; 
 }
 
 .img-button-left, .img-button-right{
@@ -720,6 +726,7 @@ ul.banner-social-buttons {
   -o-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
+
 }
 
 .img-button-left:hover {
@@ -1288,7 +1295,7 @@ ul.banner-social-buttons {
   vertical-align: middle;
   font-size: 40px;
   margin-bottom:0;
-  text-shadow: 1px 1px 2px #000000, 0 0 25px #000000, 0 0 5px #000000;
+  text-shadow: 1px 1px 2px #777, 0 0 25px #777, 0 0 5px #777;
   color:#FFFFFF; 
 }
 

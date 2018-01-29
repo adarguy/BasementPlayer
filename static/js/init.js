@@ -9,15 +9,19 @@ function checkMobile(){
     ){ document.getElementById('title-grab').innerHTML = ''; return true; }
 }
 
+function maintenanceAlert() {
+	alert('We are currently undergoing maintenance and will have products available soon!');
+}
+
 function printNav(root_dir, link_dir='') {
 	document.write(`    
 	    <!-- Navigation -->
 	    <nav id="navbar" class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation" data-aos="slide-down" data-aos-duration="1000" data-aos-once="true">
 	        <div class="container-fluid">
 	            <div class="navbar-header navbar-home">
-	                <a class="navbar-icon" href="`+root_dir+`index.html" ><img src="`+root_dir+`static/img/buttons/btn_home.png"/></a>
+	                <a class="navbar-icon" href="`+root_dir+`index.html" ><img src="`+root_dir+`static/img/buttons/home.png"/></a>
 	                <a class="navbar-brand page-scroll" style="margin-left: -5px;" href="`+root_dir+`index.html">
-	                    <span class="navbar-name">Byte Camp</span>
+	                    <span class="navbar-name">Basement Player</span>
 	                </a>
 	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 	                    Menu <i class="fa fa-bars"></i>
@@ -30,11 +34,11 @@ function printNav(root_dir, link_dir='') {
 	                        <a href="#page-top"></a>
 	                    </li>
 	                    <li>
-	                        <a class="page-scroll navbar-reg" href="`+link_dir+`calendar/calendar_2017.html"> Register Now </a>
+	                        <a class="page-scroll navbar-reg" href="#" onclick=maintenanceAlert();> Shop Now </a>
 	                    </li>
 	                    <li class="dropdown navbar-programs">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Programs <span class="caret"></span></a>
-	                        <ul class="dropdown-menu navbar-custom">
+	                        <a href="`+link_dir+`about-us.html" role="button" aria-haspopup="true" aria-expanded="false"> About BP <!--span class="caret"--></span></a>
+	                        <!--ul class="dropdown-menu navbar-custom">
 	                            <li><a href="`+link_dir+`calendar/calendar_2017.html">Calendar</a></li>
 	                            <li role="separator" class="divider"></li>
 	                            <li><a href="`+link_dir+`camps.html#programs">Camps</a></li>
@@ -42,17 +46,17 @@ function printNav(root_dir, link_dir='') {
 	                            <li><a href="`+link_dir+`byte-o-vision.html">Best Of's</a></li>
 	                            <li role="separator" class="divider"></li>
 	                            <li><a href="`+link_dir+`resources.html">Resources</a></li>
-	                        </ul>
+	                        </ul-->
 	                    </li>
 	                    <li class="dropdown navbar-about">
-	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> About Us <span class="caret"></span></a>
-	                        <ul class="dropdown-menu navbar-custom">
+	                        <a href="`+link_dir+`faq.html" role="button" aria-haspopup="true" aria-expanded="false"> FAQs <!--span class="caret"--></span></a>
+	                        <!--ul class="dropdown-menu navbar-custom">
 	                            <li><a href="`+link_dir+`about_us.html#what">Who are We?</a></li>
 	                            <li role="separator" class="divider"></li>
 	                            <li><a href="`+link_dir+`about_us.html#who">Contact Us</a></li>
 	                            <li role="separator" class="divider"></li>
 	                            <li><a href="`+link_dir+`faq.html">FAQs</a></li>
-	                        </ul>
+	                        </ul-->
 	                    </li>
 	                </ul>
 	            </div>
@@ -78,7 +82,7 @@ function printHead(root_dir){
 
 	    <!-- Custom Fonts -->
 	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Montserrat:400,700" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Raleway:400,700" rel="stylesheet">
 
 	    <!-- AOS Core -->
 	    <link href="`+root_dir+`static/css/vendor/animate.css" rel="stylesheet">
@@ -96,8 +100,9 @@ function printFoot(root_dir){
 	    <footer class="container-fluid">
 	        <div class="col-center">
 	            <div class="container text-center" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-	                <img src="`+root_dir+`static/img/icons/other/website-logo.png"/>
-	                <p>Copyright &copy; Basement Player 2018</p>
+	                <!--img src="`+root_dir+`static/img/icons/other/website-logo.png"/-->
+	                <p style="font-size:20px;">Basement Player is a subsidiary company of MTI Cleaning and Restoration Inc.</p>
+	                <p style="font-size:15px;">Copyright &copy; Basement Player 2018. All Rights Reserved</p>
 	            </div>
 	        </div>
 	    </footer>
