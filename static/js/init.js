@@ -33,30 +33,23 @@ function printNav(root_dir, link_dir='') {
 	                    <li class="hidden">
 	                        <a href="#page-top"></a>
 	                    </li>
-	                    <li>
-	                        <a class="page-scroll navbar-reg" href="#" onclick=maintenanceAlert();> Shop Now </a>
+	                    <li class="dropdown navbar-shop">
+	                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Products <span class="caret"></span></a>
+	                        <ul class="dropdown-menu navbar-custom">
+	                            <li><a href="`+link_dir+`rigs.html">Mining Rigs</a></li>
+	                            <li role="separator" class="divider"></li>
+	                            <li><a href="`+link_dir+`gaming.html">Gaming</a></li>
+	                            <li role="separator" class="divider"></li>
+	                            <li><a href="#" onclick="maintenanceAlert();">Computer Parts</a></li>
+	                            <li role="separator" class="divider"></li>
+	                            <li><a href="#" onclick="maintenanceAlert();">Shop Now</a></li>
+	                        </ul>
 	                    </li>
 	                    <li class="dropdown navbar-programs">
 	                        <a href="`+link_dir+`about-us.html" role="button" aria-haspopup="true" aria-expanded="false"> About BP <!--span class="caret"--></span></a>
-	                        <!--ul class="dropdown-menu navbar-custom">
-	                            <li><a href="`+link_dir+`calendar/calendar_2017.html">Calendar</a></li>
-	                            <li role="separator" class="divider"></li>
-	                            <li><a href="`+link_dir+`camps.html#programs">Camps</a></li>
-	                            <li role="separator" class="divider"></li>
-	                            <li><a href="`+link_dir+`byte-o-vision.html">Best Of's</a></li>
-	                            <li role="separator" class="divider"></li>
-	                            <li><a href="`+link_dir+`resources.html">Resources</a></li>
-	                        </ul-->
 	                    </li>
 	                    <li class="dropdown navbar-about">
 	                        <a href="`+link_dir+`faq.html" role="button" aria-haspopup="true" aria-expanded="false"> FAQs <!--span class="caret"--></span></a>
-	                        <!--ul class="dropdown-menu navbar-custom">
-	                            <li><a href="`+link_dir+`about_us.html#what">Who are We?</a></li>
-	                            <li role="separator" class="divider"></li>
-	                            <li><a href="`+link_dir+`about_us.html#who">Contact Us</a></li>
-	                            <li role="separator" class="divider"></li>
-	                            <li><a href="`+link_dir+`faq.html">FAQs</a></li>
-	                        </ul-->
 	                    </li>
 	                </ul>
 	            </div>
