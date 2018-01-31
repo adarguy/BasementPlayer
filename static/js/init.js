@@ -67,6 +67,8 @@ function printHead(root_dir){
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta name="description" content="">
 	    <meta name="author" content="">
+	    
+	    <title>Basement Player</title>
 
 		<link rel="shortcut icon" href="`+root_dir+`favicon.ico" type="image/x-icon">
 
